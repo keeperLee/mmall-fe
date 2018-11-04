@@ -2,7 +2,7 @@
 * @Author: ASUS
 * @Date:   2018-11-04 17:06:39
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-04 19:17:16
+* @Last Modified time: 2018-11-04 19:41:13
 */
 'use strict';
 
@@ -53,9 +53,37 @@ var _mm = {
                 result = template.render(data);
                 return result;
         },
+        //成功提示
+        successTips : function(msg){
+            alert(msg || '操作成功！');
+        }，
+         //错误提示
+        errorTips : function(msg){
+            alert(msg || '操作失败~~');
+        }，
+        //字段的验证,支持非空，手机、邮箱的判断
+        validata  : function(value,type){
+                var value = $.trim(value);
+                //把value强转为boolean类型，如果value有值，返回true,value为空字符串返回false
+                //非空验证
+                if('require' === type){
+                        return !!value;
+                }
+                //手机号验证
+                  if('phone' === type){
+                        return /^1d{10}$/.test(value);
+                }
+                  //邮箱格式验证
+                  if('phone' === type){
+                        return /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(value);
+                }
+        },
         //统一登录处理
         doLogin     : function(){
                 window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        },
+        goHome : function(){
+                window.location.href = './index.html';
         }
 };
 module.exports = _mm;
