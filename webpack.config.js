@@ -37,6 +37,15 @@ var config = {
                  {test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader:'url-loader?limit=100&name=resource/[name].[ext]'}
             ]
     },
+    resolve :{
+        alias:{
+                util : __dirname + '/src/util',  //__dirname，表示当前路径
+                page : __dirname + '/src/page',
+                service : __dirname + '/src/service',
+                image : __dirname + '/src/image',
+
+        }
+    },
     plugins:[
             //独立通用模块到js
             new webpack.optimize.CommonsChunkPlugin({

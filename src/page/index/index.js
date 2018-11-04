@@ -2,15 +2,18 @@
 * @Author: ASUS
 * @Date:   2018-11-03 10:19:38
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-03 11:13:41
+* @Last Modified time: 2018-11-04 17:42:01
 */
 
 'use strict';
 
-// var $ = require('jquery');
-// $('body').html('HELLO INDEX');
-// var $$ = require('jquery');
-// console.log('hello index');
-// $$('body').html('INDEX HELLO ~~~~~ ');
-require('./index.css');
-require('../module.js');
+var _mm = require('util/mm.js');
+_mm.request({
+    url :'/product/list.do?keyword=1',
+    success : function(res){
+        console.log(res);
+    },
+     error : function(errMsg){
+        console.log(errMsg);
+    }
+});
