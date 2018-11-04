@@ -2,9 +2,11 @@
 * @Author: ASUS
 * @Date:   2018-11-04 17:06:39
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-04 18:57:52
+* @Last Modified time: 2018-11-04 19:17:16
 */
 'use strict';
+
+var Hogan = require('hogan.js');
 var conf = {
     serverHost  : ''
 };
@@ -43,6 +45,13 @@ var _mm = {
                 var reg = new  RegExp('(^|&)' + name + '=([^&]*)(&|$)');
                 var result = window.location.search.substr(1).match(reg);
                 return result ? decodeURIComponent(result[2]) : null;
+        },
+        //渲染html模板
+        renderHtml : function(htmlTemplate,data){
+                //先编译
+                var template = Hogan.compile(htmlTemplate),
+                result = template.render(data);
+                return result;
         },
         //统一登录处理
         doLogin     : function(){
