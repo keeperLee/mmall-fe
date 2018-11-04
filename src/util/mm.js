@@ -2,7 +2,7 @@
 * @Author: ASUS
 * @Date:   2018-11-04 17:06:39
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-04 19:41:13
+* @Last Modified time: 2018-11-04 19:57:17
 */
 'use strict';
 
@@ -56,11 +56,11 @@ var _mm = {
         //成功提示
         successTips : function(msg){
             alert(msg || '操作成功！');
-        }，
+        },
          //错误提示
         errorTips : function(msg){
             alert(msg || '操作失败~~');
-        }，
+        },
         //字段的验证,支持非空，手机、邮箱的判断
         validata  : function(value,type){
                 var value = $.trim(value);

@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%= require('html-loader!./layout/html-head.html')%>
+<head>
+    <%= require('html-loader!./layout/html-common.html')%>
+    <title>mmall电商平台</title>
+</head>
 <body>
-        <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-    hello
+    <div>
+        <a class="link">test</a>
+        <a class="link-text">test</a>
+    </div>
+    <div>
+        <a class="btn">test</a>
+        <a class="btn btn-mini">test</a>
+    </div>
+       <div>
+        <div class="loading"></div>
+    </div>
+    <div>
+        <i class="fa fa-user"></i>
+    </div>
+
+    <%= require('html-loader!./layout/footer.html')%>
 </body>
 </html>
