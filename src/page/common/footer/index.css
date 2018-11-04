@@ -1,0 +1,22 @@
+/*
+* @Author: ASUS
+* @Date:   2018-11-05 00:47:04
+* @Last Modified by:   ASUS
+* @Last Modified time: 2018-11-05 00:53:07
+*/
+.footer{
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color:#666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+   text-align: center;
+    color:#666;
+    line-height: 30px;
+}
