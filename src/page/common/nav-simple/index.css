@@ -1,0 +1,17 @@
+/*
+* @Author: ASUS
+* @Date:   2018-11-04 20:44:28
+* @Last Modified by:   ASUS
+* @Last Modified time: 2018-11-04 20:58:18
+*/
+.nav-simple{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.nav-simple .logo{
+    font-weight: 26px;
+    font-weight: bold;
+    color: #c60023;
+}

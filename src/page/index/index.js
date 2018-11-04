@@ -2,24 +2,9 @@
 * @Author: ASUS
 * @Date:   2018-11-03 10:19:38
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-04 19:11:40
+* @Last Modified time: 2018-11-04 23:31:45
 */
 
 'use strict';
-
+require('page/common/nav/index.js');
 var _mm = require('util/mm.js');
-// _mm.request({
-//     url :'/product/list.do?keyword=1',
-//     success : function(res){
-//         console.log(res);
-//     },
-//      error : function(errMsg){
-//         console.log(errMsg);
-//     }
-// });
-// console.log(_mm.getUrlParam('test'));
-var html = '<div>{{data}}</div>';
-var data = {
-    data :123
-};
-console.log(_mm.renderHtml(html,data));
