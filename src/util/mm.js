@@ -2,7 +2,7 @@
 * @Author: ASUS
 * @Date:   2018-11-04 17:06:39
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-04 19:57:17
+* @Last Modified time: 2018-11-11 02:00:15
 */
 'use strict';
 
@@ -80,7 +80,7 @@ var _mm = {
         },
         //统一登录处理
         doLogin     : function(){
-                window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+                window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
         },
         goHome : function(){
                 window.location.href = './index.html';
