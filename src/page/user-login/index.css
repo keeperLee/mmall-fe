@@ -2,7 +2,7 @@
 * @Author: ASUS
 * @Date:   2018-11-11 02:04:19
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-11 02:47:59
+* @Last Modified time: 2018-11-11 09:50:44
 */
 /*最外层容器*/
 .page-wrap{
@@ -38,6 +38,7 @@
     border: 1px solid red;
     color: red;
     background: #fde9e9;
+    display: none;
 }
 /*错误提图标*/
 .user-con .user-box .error-icon{

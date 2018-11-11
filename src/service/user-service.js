@@ -2,12 +2,22 @@
 * @Author: ASUS
 * @Date:   2018-11-05 00:04:23
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-05 00:46:11
+* @Last Modified time: 2018-11-11 10:34:44
 */
 var _mm = require('util/mm.js');
 var _user = {
+      //用户登录
+    checkLogin  :   function(userInfo,resolve,reject){
+        _mm.request({
+                url :   _mm.getServerUrl('/user/login.do'),
+                data  :  userInfo,
+                method :  'POST',
+                success     :  resolve,
+                error   :       reject,
+        });
+    },
      //检查登录状态
-    checkLogin  :   function(resolve,reject){
+    login  :   function(resolve,reject){
         _mm.request({
                 url :   _mm.getServerUrl('/user/get_user_info.do'),
                 method :  'POST',
