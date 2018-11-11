@@ -2,7 +2,7 @@
 * @Author: ASUS
 * @Date:   2018-11-04 17:06:39
 * @Last Modified by:   ASUS
-* @Last Modified time: 2018-11-11 02:00:15
+* @Last Modified time: 2018-11-11 10:56:27
 */
 'use strict';
 
@@ -62,7 +62,7 @@ var _mm = {
             alert(msg || '操作失败~~');
         },
         //字段的验证,支持非空，手机、邮箱的判断
-        validata  : function(value,type){
+        validate  : function(value,type){
                 var value = $.trim(value);
                 //把value强转为boolean类型，如果value有值，返回true,value为空字符串返回false
                 //非空验证
